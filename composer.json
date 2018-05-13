@@ -1,0 +1,19 @@
+{
+    "name": "sasha-mart/cart-discount",
+    "type": "standard",
+    "homepage": "https://github.com/sasha-mart/cart-discount.git",
+    "autoload": {
+        "psr-4": {
+            "SashaMart\\CartDiscount\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SashaMart\\CartDiscount\\": "tests/"
+        }
+    },
+    "bin": ["bin/logic-tasks"],
+    "require-dev": {
+        "phpunit/phpunit": "^7.1"
+    }
+}
