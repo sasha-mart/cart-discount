@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1526289510">
-  <project timestamp="1526289510">
+<coverage generated="1526290541">
+  <project timestamp="1526290541">
     <package name="SashaMart\CartDiscount">
       <file name="/home/sasha/self/cart-discount/src/Cart.php">
         <class name="SashaMart\CartDiscount\Cart" namespace="SashaMart\CartDiscount">
-          <metrics complexity="19" methods="8" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="39" coveredstatements="0" elements="47" coveredelements="0"/>
+          <metrics complexity="21" methods="8" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="43" coveredstatements="0" elements="51" coveredelements="0"/>
         </class>
         <line num="18" type="method" name="__construct" visibility="public" complexity="2" crap="6.00" count="0"/>
         <line num="20" type="stmt" count="0"/>
@@ -23,7 +23,7 @@
         <line num="45" type="stmt" count="0"/>
         <line num="48" type="method" name="getDiscountedTotalAmount" visibility="public" complexity="1" crap="2.00" count="0"/>
         <line num="50" type="stmt" count="0"/>
-        <line num="53" type="method" name="_getDiscount" visibility="private" complexity="8" crap="72.00" count="0"/>
+        <line num="53" type="method" name="_getDiscount" visibility="private" complexity="10" crap="110.00" count="0"/>
         <line num="55" type="stmt" count="0"/>
         <line num="56" type="stmt" count="0"/>
         <line num="59" type="stmt" count="0"/>
@@ -37,23 +37,27 @@
         <line num="71" type="stmt" count="0"/>
         <line num="72" type="stmt" count="0"/>
         <line num="73" type="stmt" count="0"/>
+        <line num="74" type="stmt" count="0"/>
         <line num="75" type="stmt" count="0"/>
-        <line num="78" type="method" name="_isFirstOrder" visibility="private" complexity="2" crap="6.00" count="0"/>
+        <line num="79" type="stmt" count="0"/>
         <line num="80" type="stmt" count="0"/>
-        <line num="81" type="stmt" count="0"/>
-        <line num="82" type="stmt" count="0"/>
         <line num="83" type="stmt" count="0"/>
-        <line num="85" type="stmt" count="0"/>
-        <line num="88" type="method" name="addOrder" visibility="public" complexity="1" crap="2.00" count="0"/>
+        <line num="86" type="method" name="_isFirstOrder" visibility="private" complexity="2" crap="6.00" count="0"/>
+        <line num="88" type="stmt" count="0"/>
+        <line num="89" type="stmt" count="0"/>
         <line num="90" type="stmt" count="0"/>
         <line num="91" type="stmt" count="0"/>
-        <line num="92" type="stmt" count="0"/>
         <line num="93" type="stmt" count="0"/>
-        <line num="94" type="stmt" count="0"/>
-        <line num="95" type="stmt" count="0"/>
-        <line num="97" type="stmt" count="0"/>
+        <line num="96" type="method" name="addOrder" visibility="public" complexity="1" crap="2.00" count="0"/>
         <line num="98" type="stmt" count="0"/>
-        <metrics loc="98" ncloc="93" classes="1" methods="8" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="39" coveredstatements="0" elements="47" coveredelements="0"/>
+        <line num="99" type="stmt" count="0"/>
+        <line num="100" type="stmt" count="0"/>
+        <line num="101" type="stmt" count="0"/>
+        <line num="102" type="stmt" count="0"/>
+        <line num="103" type="stmt" count="0"/>
+        <line num="105" type="stmt" count="0"/>
+        <line num="106" type="stmt" count="0"/>
+        <metrics loc="106" ncloc="97" classes="1" methods="8" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="43" coveredstatements="0" elements="51" coveredelements="0"/>
       </file>
       <file name="/home/sasha/self/cart-discount/src/DbConnection.php">
         <class name="SashaMart\CartDiscount\DbConnection" namespace="SashaMart\CartDiscount">
@@ -89,6 +93,6 @@
         <metrics loc="25" ncloc="25" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="9" coveredelements="0"/>
       </file>
     </package>
-    <metrics files="3" loc="163" ncloc="156" classes="3" methods="14" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="54" coveredstatements="0" elements="68" coveredelements="0"/>
+    <metrics files="3" loc="171" ncloc="160" classes="3" methods="14" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="58" coveredstatements="0" elements="72" coveredelements="0"/>
   </project>
 </coverage>
