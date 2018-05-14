@@ -1,16 +1,10 @@
 
 
-Code Coverage Report:    
-  2018-05-13 10:13:39    
-                         
- Summary:                
-  Classes: 33.33% (1/3)  
-  Methods: 85.71% (12/14)
-  Lines:   94.55% (52/55)
+Code Coverage Report:   
+  2018-05-14 09:18:30   
+                        
+ Summary:               
+  Classes:  0.00% (0/3) 
+  Methods:  0.00% (0/14)
+  Lines:    0.00% (0/54)
 
-\SashaMart\CartDiscount::SashaMart\CartDiscount\Cart
-  Methods:  87.50% ( 7/ 8)   Lines:  97.50% ( 39/ 40)
-\SashaMart\CartDiscount::SashaMart\CartDiscount\DbConnection
-  Methods:  66.67% ( 2/ 3)   Lines:  77.78% (  7/  9)
-\SashaMart\CartDiscount::SashaMart\CartDiscount\User
-  Methods: 100.00% ( 3/ 3)   Lines: 100.00% (  6/  6)

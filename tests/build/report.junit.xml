@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="converter" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.019475">
-    <testsuite name="SashaMart\CartDiscount\CartTest" file="/home/sasha/tutu/cart-discount/tests/CartTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.019475">
-      <testcase name="testDiscountedTotal" class="SashaMart\CartDiscount\CartTest" classname="SashaMart.CartDiscount.CartTest" file="/home/sasha/tutu/cart-discount/tests/CartTest.php" line="9" assertions="2" time="0.019475"/>
+  <testsuite name="converter" tests="1" assertions="0" errors="1" failures="0" skipped="0" time="0.007441">
+    <testsuite name="SashaMart\CartDiscount\CartTest" file="/home/sasha/self/cart-discount/tests/CartTest.php" tests="1" assertions="0" errors="1" failures="0" skipped="0" time="0.007441">
+      <testcase name="testDiscountedTotal" class="SashaMart\CartDiscount\CartTest" classname="SashaMart.CartDiscount.CartTest" file="/home/sasha/self/cart-discount/tests/CartTest.php" line="9" assertions="0" time="0.007441">
+        <error type="Error">SashaMart\CartDiscount\CartTest::testDiscountedTotal
+Error: Class 'SQLite3' not found
+
+/home/sasha/self/cart-discount/src/DbConnection.php:13
+/home/sasha/self/cart-discount/src/DbConnection.php:31
+/home/sasha/self/cart-discount/src/Cart.php:21
+/home/sasha/self/cart-discount/tests/CartTest.php:12
+</error>
+      </testcase>
     </testsuite>
   </testsuite>
 </testsuites>

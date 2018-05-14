@@ -55,7 +55,6 @@ class Cart
 	    $result = 0;
 	    $total = $this->getTotalAmount();
 
-
 	    if (
 	        $this->_user->getSex() === 'm' && $this->_user->getAge() >= 60 ||
             $this->_user->getSex() === 'w' && $this->_user->getAge() >= 55
@@ -70,15 +69,22 @@ class Cart
 
         $result = round($result, 2);
         $percent = $result / $total;
-        foreach ($this->_items as $key=>$item)
-            $this->_items[$key]['discount'] = round($item['price'] * $percent, 2);
+        $control = 0;
+        foreach ($this->_items as $key=>$item) {
+	        $this->_items[$key]['discount'] = round($item['price'] * $percent, 2);
+	        $control += $this->_items[$key]['discount'];
+        }
+        // если сумма всех скидок, добавленных к товарам, не равна итоговой скидке
+		// то добавим разницу к первому товару
+        if ($control !== $result && isset($this->_items[0])) {
+			$this->_items[0]['discount'] += $result - $control;
+        }
 
 		return $result;
 	}
 
 	private function _isFirstOrder(): bool
     {
-        $userId = $this->_user->id;
         $stnt = $this->_db->prepare( "SELECT count(*) FROM orders WHERE user_id=:id");
         $stnt->bindValue(':id', $this->_user->id);
         $count = $stnt->execute();
